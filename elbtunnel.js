@@ -68,7 +68,13 @@ setInterval(function(){a.fillStyle="black";
           if(x>899){a.stroke();}}
         x=0;}
     }
-
-
+  if(t>100){
+    a.globalAlpha=1;
+    a.beginPath();
+    if(t<215){a.rect(700-3*t+370,185,50,100);}
+    if(t>214 && t<250){a.rect(425,185,50,100);}
+    if(t>249){a.rect(425-3*t+750,185,50,100);}
+    a.fillStyle="black";
+    a.fill();}
 },40);
 
